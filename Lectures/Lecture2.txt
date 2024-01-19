@@ -1,0 +1,10 @@
+python vs c
+- python is highlevel
+- python is an interpereted language
+- C is lower level
+- C is compliled language
+- C code can be much faster than python code to ru, but slower to code
+
+Types in c
+- unlike in pytohn every variable in c has to be asigned a data type:
+    
