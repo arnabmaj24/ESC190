@@ -2,6 +2,7 @@
 
 void selectionsort(int a[], int size);
 void bubblesort(int a[], int size);
+void insertionsort(int arr[], int size);
 
 int main(){
     int i = 0;
@@ -12,7 +13,7 @@ int main(){
         printf("%d ", a[i]);
         }
     printf("\n");
-    selectionsort(a, sizeof(a)/4);
+    insertionsort(a, sizeof(a)/4);
     i = 0;
     while(i < 5){
         printf("%d ", a[i]);
@@ -52,5 +53,24 @@ void selectionsort(int a[], int size){
         }
         a[j+1] = temp;
     }
+
+}
+
+void insertionsort(int arr[], int size){
+    int i, key, j;
+
+    for (i=0;i<size;i++){
+        key = arr[i];
+        j = i - 1;
+
+        while (j >= 0 && arr[j] > key){
+            arr[j+1] = arr[j];
+            j = j - 1;
+        }
+        arr[j+1] = key;
+    
+    }
+
+
 
 }
